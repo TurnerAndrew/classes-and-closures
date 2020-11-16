@@ -63,7 +63,7 @@ const callJake = callFriend('Jake')
   Write a function called makeCounter that makes the following code work properly.
 */
 
-function makeCounter(num){
+function makeCounter(){
   let counter = 0
   return function(){
     counter++
@@ -95,12 +95,12 @@ function makeCounter(num){
 function counterFactory(num) {
   
   return{
-    inc: () =>{
+    inc: () => {
       num++
       return num
     }, 
 
-    dec: () =>{
+    dec: () => {
       num--
       return num
     }
@@ -216,8 +216,6 @@ function timeOutCounter() {
    timeout(i)
   }
 }
-
-
 
 
 timeOutCounter();
